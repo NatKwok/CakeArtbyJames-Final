@@ -1,2 +1,4 @@
-# UI_Team_Project_A2
- 
+# WD_Final_Project
+ Web Design for home-based business:
+
+### Cake Art by James

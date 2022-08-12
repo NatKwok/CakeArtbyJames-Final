@@ -1,0 +1,139 @@
+@import 'contact_variables';
+
+/*--------------------------------------------------------------
+  # Contact Section
+  --------------------------------------------------------------*/
+
+.contact .section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contact .section-header p {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: $contact-font-primary;
+}
+
+.contact .section-header p span {
+  color: $contact-color-primary;
+}
+
+.contact .info-item {
+  background: #f4f4f4;
+  padding: 30px;
+  height: 100%;
+}
+
+.contact .info-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 0;
+  color: #fff;
+  background: $contact-color-primary;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.contact .info-item .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: rgba(55, 55, 63, 0.7);
+  line-height: 1;
+  margin: 4px 6px 0 0;
+  transition: 0.3s;
+}
+
+.contact .info-item .social-links a:hover {
+  color: $contact-color-primary;
+}
+
+.contact .email-form {
+  width: 100%;
+  margin-top: 30px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact .email-form .form-group {
+  padding-bottom: 20px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+  border-color: $contact-color-primary;
+}
+
+.contact .email-form input {
+  height: 48px;
+}
+
+.contact .email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .email-form button[type=submit] {
+  background: $contact-color-primary;
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .email-form button[type=submit]:hover {
+  background: $contact-color-secondary;
+  cursor: grabbing;
+}
+
+#sendMsgModalBody {
+  background: $contact-color-primary;
+}
+
+.navbar-nav .nav-item .contact-nav-link {
+  color: $nav-item-selected-color;
+}
+
+.flip-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-rotate180 {
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+
+.flip-box-rotate360 {
+  transform: rotateY(360deg);
+}
