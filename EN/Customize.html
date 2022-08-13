@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< Updated upstream:EN/Customize.html
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -172,50 +173,117 @@
                   placeholder="Total Guests"
                 />
                 <br />
+=======
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="/scripts/customize.js"></script>
+	<title>Customize your Cake</title>
+</head>
+<body>
+	<div class="jumbotron text-center">
+			<img src="images/logo.png" class="logo" width="200" height="200">
+			<h4>Cake Art by James</h4>
+	</div>
 
-                <label>Choose Cake Flavour</label>
-                <br />
-                <select class="form-select form-control-lg">
-                  <option>Chocolate</option>
-                  <option>Vanilla</option>
-                  <option>Red Velvet</option>
-                  <option>Lemon</option>
-                  <option>Funfetti</option>
-                  <option>Carrot</option>
-                  <option>Cheesecake (+$20.00)</option>
-                  <option>Black Forest (+$15.00)</option>
-                </select>
-                <br />
-                <label>Choose Filling</label>
-                <br />
-                <select class="form-select form-control-lg">
-                  <option>Cherry</option>
-                  <option>Marscapone</option>
-                  <option>Vanilla Custard</option>
-                  <option>Raspberry</option>
-                  <option>Strawberry</option>
-                  <option>Lemon Curd</option>
-                  <option>French Buttercream</option>
-                  <option>Chocolate Ganache</option>
-                </select>
-                <br />
-                <label>Notes/Special Requests</label>
-                <br />
-                <textarea class="form-control" rows="3"></textarea>
-                <br />
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
+<div class="container">
+	<div class="navbar navbar-expand-md navbar-dark mb-4 " style="background-color: #ffaa80;">
+	<ul class="navbar-nav me-auto mb-2 mb-md-0">
+		<li class="nav-item"><a  class="nav-link active" href="">Home</a></li>
+		<li class="nav-item"><a  class="nav-link active" href="">Products</a></li>
+		<li class="nav-item"><a  class="nav-link active" href="">Customize</a></li>
+		<li class="nav-item"><a  class="nav-link active" href="">Specials</a></li>
+		<li class="nav-item"><a  class="nav-link active" href="">About</a></li>
+		<li class="nav-item"><a  class="nav-link active" href="">Contact</a></li>
+	</ul>
+</div>
+</div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12"></div>
-        </div>
-      </div>
+<div class="col-xxl-4 themed-grid-col" >
+	<p>
+		Customize you cake
+	</p>
+	
+</div>
 
+<div class="Gallery">
+	
+</div>
+<div class="container" style="border:1px solid #ffaa80" >
+<div class="form-group">
+	<form id="cakeform" onsubmit="">
+		<label>Full Name</label>
+		<br>
+		<input  class="form-control" type="text" id="full_name" value="Type in Full Name (Firstname, Lastname)" 
+				onfocus="this.value=''">
+		<br>
+		<label>Email Address</label>
+		<br>
+		<input  class="form-control" type="text" id="email" value="Enter your email address" 
+				onfocus="this.value=''">
+		<br>
+		<label>Date of Event</label>
+		<br>
+		<input  class="form-control" type="date" id="DOE">
+		<br>
+		<label>Total Guests Attending/Consuming</label>
+		<br>
+		<input  class="form-control" type="text" id="total_guests" value="Enter number of guests so we can prepare the cake size" 
+				onfocus="this.value=''">
+		<br>
+
+		<label>Choose Cake Flavour</label>
+				<br>
+		    <select class="form-select form-control-lg">
+		      <option>Chocolate</option>
+		      <option>Vanilla</option>
+		      <option>Red Velvet</option>
+		      <option>Lemon</option>
+		      <option>Funfetti</option>
+		      <option>Carrot</option>
+		      <option>Cheesecake (+$20.00)</option>
+		      <option>Black Forest (+$15.00)</option>
+		    </select>
+		<br>
+				<label>Choose Filling</label>
+				<br>
+		    <select class="form-select form-control-lg">
+		      <option>Cherry</option>
+		      <option>Marscapone</option>
+		      <option>Vanilla Custard</option>
+		      <option>Raspberry</option>
+		      <option>Strawberry</option>
+		      <option>Lemon Curd</option>
+		      <option>French Buttercream</option>
+		      <option>Chocolate Ganache</option>
+		    </select>	
+		    <br>	
+		    <label>Notes/Special Requests</label>
+			<br>
+			<textarea class="form-control" rows="3"></textarea>
+		<br>
+		<button type="button" class="btn btn-primary" name="submit" onclick="validation()">Submit</button>
+		
+	</form>
+	
+</div>
+</div>
+>>>>>>> Stashed changes:Customize.html
+
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#logo"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">&copy; CakeArtbyJames Inc. All Rights Reserved</span>
+    </div>
+
+<<<<<<< Updated upstream:EN/Customize.html
       <footer class="text-center">
         <div class="container text-muted py-4 py-lg-5">
           <ul class="list-inline">
@@ -273,3 +341,14 @@
     <script src="/assets/js/Lightbox-Gallery.js"></script>
   </body>
 </html>
+=======
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>
+>>>>>>> Stashed changes:Customize.html
