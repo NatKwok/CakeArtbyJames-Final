@@ -17,10 +17,6 @@ const emailSubscribe = document
 
     let inputEmail = document.getElementById('emailInputByUser').value;
 
-    // initialize email's correct format:
-    const mailformat =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
     if (validateEmail(inputEmail)) {
       swal({
         title: 'AWESOME!😆',
