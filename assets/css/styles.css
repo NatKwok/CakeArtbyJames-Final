@@ -84,3 +84,35 @@
 .cake-right {
   margin-top: 30px;
 }
+
+.po-back,
+.cup-back,
+.dess-back,
+.cak-back {
+  background-image: linear-gradient(
+    130deg,
+    hsl(240deg 6% 93%) 0%,
+    hsl(6deg 11% 92%) 26%,
+    hsl(17deg 23% 91%) 41%,
+    hsl(19deg 33% 90%) 50%,
+    hsl(21deg 40% 88%) 55%,
+    hsl(22deg 47% 87%) 58%,
+    hsl(22deg 52% 85%) 60%,
+    hsl(23deg 56% 84%) 61%,
+    hsl(24deg 60% 82%) 64%,
+    hsl(24deg 64% 81%) 70%,
+    hsl(25deg 67% 79%) 80%,
+    hsl(25deg 69% 77%) 100%
+  );
+
+  /* 35deg,
+    hsl(240deg 6% 93%) 0%,
+    hsl(2deg 9% 93%) 32%,
+    hsl(17deg 22% 92%) 45%,
+    hsl(20deg 33% 92%) 55%,
+    hsl(22deg 43% 92%) 64%,
+    hsl(23deg 53% 91%) 74%,
+    hsl(23deg 61% 91%) 86%,
+    hsl(24deg 69% 90%) 100%
+  ); */
+}
