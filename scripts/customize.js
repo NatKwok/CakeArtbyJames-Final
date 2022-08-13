@@ -1,19 +1,19 @@
 function validation() {
 
-    var full_name = document.getElementById('full_name').value;
-    var email = document.getElementById('email').value;
-    var DOE = document.getElementById('DOE').value;
-    var total_guests = document.getElementById('total_guests').value;
+    let full_name = document.getElementById('full_name');
+    let email = document.getElementById('email');
+    let DOE = document.getElementById('DOE');
+    let total_guests = document.getElementById('total_guests');
 
-    if (full_name == "" || full_name ==null) {
-        console.log("passed")
+    if (full_name == null || full_name.value == "" || full_name.value == "Type in Full Name (Firstname, Lastname)") {
+        console.log("passed");
         alert("Please provide your full name");
         full_name.focus();
         return false;
         
     }
 
-    else if (email == "" || email ==null) {
+    else if (email == null || email.value == "" || email.value == "Enter your email address") {
         console.log("passed")
         alert("Please provide your email");
         email.focus();
@@ -21,7 +21,7 @@ function validation() {
         
     }
 
-    else if (DOE == "" || DOE ==null) {
+    else if (DOE == null || DOE.value == "") {
         console.log("passed")
         alert("Please set a date");
         DOE.focus();
@@ -29,7 +29,7 @@ function validation() {
         
     }
 
-    else if (total_guests == "" || total_guests ==null) {
+    else if (total_guests == null || total_guests.value == "" || total_guests.value == "Enter number of guests so we can prepare the cake size") {
         console.log("passed")
         alert("Please provide the total number of guests");
         total_guests.focus();
