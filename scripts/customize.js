@@ -3,7 +3,7 @@ function validation() {
     let full_name = $("#full_name");
     let email = $("#email");
     let DOE = $("#DOE");
-    let total_guests = $("total_guests");
+    let total_guests = $("#total_guests");
 
     if (full_name == null || full_name.value == "" || full_name.value == "Type in Full Name (Firstname, Lastname)") {
         console.log("passed")
