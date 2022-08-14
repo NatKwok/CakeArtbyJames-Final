@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <script src="../scripts/customize_receipt.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>CONFIRMATION OF ORDER</th>
+       </tr>
+       <tr>
+           <td>
+               <label>Full Name: </label>
+               <input id="full_name" type="text" />
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label>Email: </label>
+               <input id="email" type="text" />
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label>Date of Event: </label>
+               <input id="DOE" type="text" />
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label>Total Guests Attending</label>
+               <input id="total_guests" type="text" />
+           </td>
+       </tr>
+       <tr>
+        <td>
+            <label>Cake Flavor</label>
+            <input id="flavor" type="text" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Filling</label>
+            <input id="filling" type="text" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <h4>Is the information above correct?</h4>
+        <button type="button" class="btn btn-primary" name="submit" onclick="validation()">Yes</button>
+        <button type="button" class="btn btn-primary" name="submit" onclick="validation()">No</button>
+        </td>
+
+    </tr>
+
+    </table>
+
+</body>
+</html>
