@@ -110,28 +110,10 @@
   cursor: grabbing;
 }
 
-#sendMsgModalBody {
+#contactModalBody {
   background: #f08632;
 }
 
 .navbar-nav .nav-item .contact-nav-link {
   color: yellow;
-}
-
-.flip-box {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-
-.flip-box-rotate180 {
-  transform: rotateY(180deg);
-  visibility: hidden;
-}
-
-.flip-box-rotate360 {
-  transform: rotateY(360deg);
 }/*# sourceMappingURL=contact.css.map */
