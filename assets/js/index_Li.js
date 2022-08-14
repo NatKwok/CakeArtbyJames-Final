@@ -39,5 +39,6 @@ const emailSubscribe = document
         button: "Let's try it again!",
       });
     }
-    return false;
+    // return false;
+    event.preventDefault; //  To prevent the page from refreshing
   });
