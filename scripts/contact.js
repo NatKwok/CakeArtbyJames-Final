@@ -26,10 +26,14 @@ $(document).ready(() => {
         formItems.forEach((index, item) => {
             data[item.name] = item.value;
         });
+
+        let href = location.href;
+        let url =  href.slice(href.lastIndexOf('/') + 1);
+        url = "/data/" + url.slice(0,url.lastIndexOf('.')) + '.json';
         
         $.ajax({
             type: "GET",
-            url: $('#contact_json_url')[0].value,
+            url: url,
             data: JSON.stringify(data),
             dataType: "json",
             success: (respMsg) => {
