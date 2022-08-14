@@ -1,3 +1,5 @@
+
+
 function validation() {
 
     let full_name = $("#full_name");
