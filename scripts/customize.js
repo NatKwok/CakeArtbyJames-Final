@@ -42,8 +42,10 @@ function validation() {
     else {
         console.log("failed")
         alert("Your request has been submitted. Thank you for choosing CakeArt by James!");
-        
+        $('#testModal').modal('show');
     }
 
 
 }
+        
+    
