@@ -2,15 +2,17 @@
 
 $(document).ready(() => {
     let myModal = new bootstrap.Modal(
-        $("#contactSendMsgModal"),
+        $("#contactModal"),
         {}
     );
+    $("#contactModaDialog").removeClass('modal-lg');
+
     $('#ContactSendMsgForm').submit((event) => {
         event.preventDefault();
         if (isValid()){
             sendMessage();
         }else{
-            $("#sendMsgModalBody").text("Error: The message's length should be larger then 10! ");
+            $("#contactModalBody").text("Error: The message's length should be larger then 10! ");
             myModal.show();
         }    
     });
@@ -26,19 +28,23 @@ $(document).ready(() => {
         formItems.forEach((index, item) => {
             data[item.name] = item.value;
         });
+
+        let href = location.href;
+        let url =  href.slice(href.lastIndexOf('/') + 1);
+        url = "/data/" + url.slice(0,url.lastIndexOf('.')) + '.json';
         
         $.ajax({
             type: "GET",
-            url: $('#contact_json_url')[0].value,
+            url: url,
             data: JSON.stringify(data),
             dataType: "json",
             success: (respMsg) => {
-                $("#sendMsgModalBody").text(respMsg.message);
+                $("#contactModalBody").text(respMsg.message);
                 $("#sendMsgLoading").addClass("invisible");
                 myModal.show();
             },
             error: (respMsg) => {
-                $("#sendMsgModalBody").text("Error: Cannot get the message from the server");
+                $("#contactModalBody").text("Error: Cannot get the message from the server");
                 $("#sendMsgLoading").addClass("invisible");
                 myModal.show();
             }
