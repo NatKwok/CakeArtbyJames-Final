@@ -1,11 +1,6 @@
 
 function validation() {
 
-    let full_name = document.getElementById('full_name');
-    let email = document.getElementById('email');
-    let DOE = document.getElementById('DOE');
-    let total_guests = document.getElementById('total_guests');
-
     let full_nameModal = $("#full_name").val();
     let emailModal = $("#email").val();
     let DOEModal = $("#DOE").val();
@@ -13,34 +8,34 @@ function validation() {
     let fillingModal = $("#filling").val();
     let flavorModal = $("#flavor").val();
 
-    if (full_name == null || full_name.value == "" || full_name.value == "Type in Full Name (Firstname, Lastname)") {
+    if (full_nameModal == null || full_nameModal == "" || full_nameModal == "Type in Full Name (Firstname, Lastname)") {
         console.log("passed");
         alert("Please provide your full name");
-        full_name.focus();
+        $("#full_name").focus();
         return false;
         
     }
 
-    else if (email == null || email.value == "" || email.value == "Enter your email address") {
+    else if (emailModal == null || emailModal == "" || emailModal == "Enter your email address") {
         console.log("passed")
         alert("Please provide your email");
-        email.focus();
+        $("#email").focus();
         return false;
         
     }
 
-    else if (DOE == null || DOE.value == "") {
+    else if (DOEModal == null || DOEModal == "") {
         console.log("passed")
         alert("Please set a date");
-        DOE.focus();
+        $("#DOE").focus();
         return false;
         
     }
 
-    else if (total_guests == null || total_guests.value == "" || total_guests.value == "Enter number of guests so we can prepare the cake size") {
+    else if (total_guestsModal == null || total_guestsModal == "" || total_guestsModal == "Enter number of guests so we can prepare the cake size") {
         console.log("passed")
         alert("Please provide the total number of guests");
-        total_guests.focus();
+        $("#total_guests").focus();
         return false;
         
     }
