@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Confirmation of Order</title>
+    <script src="../scripts/customize.js">
+        function confirmation() {
+
+        let full_name = document.getElementById('full_name2');
+        let email = document.getElementById('email2');
+        let DOE = document.getElementById('DOE2');
+        let total_guests = document.getElementById('total_guests2');
+
+        full_name.value = document.getElementById('full_name').value;
+        console.log("confirmation passed");
+
+        
+}
+    </script>
+
+</head>
+<body onload="confirmation()">
+    <table>
+        <tr>
+            <th>We Have Received Your Order!</th>
+       </tr>
+       <tr>
+           <td>
+               <label>Full Name: </label>
+               <input id="full_name2" type="text"/>
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label>Email: </label>
+               <input id="email2" type="email" />
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label>Date of Event: </label>
+               <input id="DOE2" type="text" />
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label>Total Guests Attending</label>
+               <input id="total_guests2" type="text" />
+           </td>
+       </tr>
+       <tr>
+        <td>
+            <label>Cake Flavor</label>
+            <input id="flavor" type="text" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Filling</label>
+            <input id="filling" type="text" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <h4>Is the information above correct?</h4>
+        <button type="button" class="btn btn-primary" name="submit" onclick="yes()">Yes</button>
+        <button type="button" class="btn btn-primary" name="submit" onclick="no()">No</button>
+        </td>
+
+    </tr>
+
+    </table>
+
+
+</body>
+</html>
