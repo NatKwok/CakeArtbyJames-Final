@@ -133,9 +133,9 @@
         
 </div>
 <!--CUSTOMIZE CONTENT-------------------------------------------------------------------------->
-<div class="container" style="border:1px solid #ffaa80" >
+<div class="container" style="border:1px solid #ffaa80">
 <div class="form-group">
-	<form id="cakeform" onsubmit="">
+	<form id="cakeform" >
 		<label>Full Name</label>
 		<br>
 		<input  class="form-control" type="text" id="full_name" value="Type in Full Name (Firstname, Lastname)" 
@@ -192,13 +192,8 @@
 	
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
 <!-- Modal -->
-<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -206,46 +201,50 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <table onload="summary()">
+    <table onload="summary()">
+          <th>
+            Order Summary
+          </th>
          <tr>
              <td>
                  <label>Full Name: </label>
-                 <input id="full_name2" type="text"/>
+                 <div id="full_name2"></div>
              </td>
          </tr>
          <tr>
              <td>
                  <label>Email: </label>
-                 <input id="email2" type="email" />
+                 <span id="email"></span>
              </td>
          </tr>
          <tr>
              <td>
                  <label>Date of Event: </label>
-                 <input id="DOE2" type="text" />
+                 <span id="DOE"></span>
              </td>
          </tr>
          <tr>
              <td>
                  <label>Total Guests Attending</label>
-                 <input id="total_guests2" type="text" />
+                 <span id="total_guests"></span>
              </td>
          </tr>
          <tr>
           <td>
-              <label>Cake Flavor</label>
-              <input id="flavor" type="text" />
+              <label>Cake Flavour</label>
+              <span id="flavour"></span>
           </td>
       </tr>
       <tr>
           <td>
               <label>Filling</label>
-              <input id="filling" type="text" />
+              <span id="filling"></span>
           </td>
       </tr>
       <tr>
           <td>
-          <h4>Is the information above correct?</h4>
+          <h7>Is the information above correct?</h7>
+          <br>
           <button type="button" class="btn btn-primary" name="submit" onclick="yes()">Yes</button>
           <button type="button" class="btn btn-primary" name="submit" data-bs-dismiss="modal" onclick="no()">No, Go back go Editing</button>
           </td>
@@ -253,9 +252,7 @@
       </tr>
   
       </table>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
       </div>
     </div>
   </div>

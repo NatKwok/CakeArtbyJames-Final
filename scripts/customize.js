@@ -51,5 +51,18 @@ function yes() {
 }
 
 function summary() {
+
+    var full_name = document.getElementById('full_name').value;
+    var email = document.getElementById('email').value;
+    //let DOE = document.getElementById('DOE').value;
+    var total_guests = document.getElementById('total_guests').value;
+    //let flavour  = document.getElementById('flavour').value;
+   // let filling = document.getElementById('filling').value;
+
+    document.getElementById('full_name2').innerHTML = full_name;
+    document.getElementById('email2').innerHTML = email;
+    //document.getElementById('DOE2').innerHTML = DOE;
+    document.getElementById('total_guests2').innerHTML = total_guests;
+
     
 }
