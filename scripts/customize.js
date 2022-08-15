@@ -1,3 +1,4 @@
+
 function validation() {
 
     let full_name = document.getElementById('full_name');
@@ -38,11 +39,14 @@ function validation() {
     }
 
     else {
-        console.log("failed")
+        console.log("All inputs filled")
         alert("Your request has been submitted. Thank you for choosing CakeArt by James!");
-        window.open("google.com")
+        document.getElementById('exampleModal').modal();
         
     }
 
 
+    
+    
 }
+
