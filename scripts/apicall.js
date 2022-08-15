@@ -4,12 +4,11 @@ $(document).ready(() => {
     console.log('api call ready');
 
     let myModal = new bootstrap.Modal(
-        $("#contactModal"),
+        $("#specialModal"),
         {}
     );
-    $("#contactModaDialog").addClass('modal-lg');
-
-    $('#contact-api-call').click(
+   
+    $('div.card').click(
         (event) => {
             let url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=b8701902d63f452cba0ef8fb15c5fe65";
             let rows = "";
@@ -19,12 +18,12 @@ $(document).ready(() => {
                 success: (resp) => {
                     console.log('#contact-api-call');
                     resp.results.forEach(item => rows = rows + row(item.id,item.title,item.image));
-                    table("#contactModalBody",rows);
+                    table("#specialModalBody",rows);
                     myModal.show();                  
                 },
                 error: (resp) => {
                   console.log(resp);
-                  $("#contactModalBody").text("Error:" + url);
+                  $("#specialModalBody").text("Error:" + url);
                 }
             });
         }
@@ -32,7 +31,8 @@ $(document).ready(() => {
 
     let table = (parent,rows) => {
         $(parent)
-         .html(`<table class="table">
+         .html(`<h2><center>Special Order Details</center></h2>
+                <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
