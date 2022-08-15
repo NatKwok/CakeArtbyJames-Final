@@ -39,7 +39,7 @@ function validation() {
     }
 
     else {
-        console.log("All inputs filled")
+        console.log("All inputs filled");
         $('#testModal').modal('show');
         
     }
@@ -59,10 +59,12 @@ function summary() {
     //let flavour  = document.getElementById('flavour').value;
    // let filling = document.getElementById('filling').value;
 
-    document.getElementById('full_name2').innerHTML = full_name;
+    document.getElementById('full_name2').value = "full_name";
     document.getElementById('email2').innerHTML = email;
     //document.getElementById('DOE2').innerHTML = DOE;
     document.getElementById('total_guests2').innerHTML = total_guests;
+
+    console.log("Summary Passed");
 
     
 }
