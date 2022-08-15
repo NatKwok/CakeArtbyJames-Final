@@ -7,11 +7,7 @@ function validation() {
     let total_guests = $("#total_guests");
 
     if (full_name == null || full_name.val("") || full_name.val("Type in Full Name (Firstname, Lastname)") ) {
-<<<<<<< Updated upstream
-        console.log("passed")
-=======
         console.log("passed full name")
->>>>>>> Stashed changes
         alert("Please provide your full name");
         full_name.focus();
         return false;
