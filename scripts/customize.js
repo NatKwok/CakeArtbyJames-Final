@@ -6,6 +6,13 @@ function validation() {
     let DOE = document.getElementById('DOE');
     let total_guests = document.getElementById('total_guests');
 
+    let full_nameModal = $("#full_name").val();
+    let emailModal = $("#email").val();
+    let DOEModal = $("#DOE").val();
+    let total_guestsModal = $("#total_guests").val();
+    let fillingModal = $("#filling").val();
+    let flavorModal = $("#flavor").val();
+
     if (full_name == null || full_name.value == "" || full_name.value == "Type in Full Name (Firstname, Lastname)") {
         console.log("passed");
         alert("Please provide your full name");
@@ -41,6 +48,13 @@ function validation() {
     else {
         console.log("All inputs filled");
         $('#testModal').modal('show');
+        $("#full_name2").html(full_nameModal);
+        $("#email2").html(emailModal);
+        $("#DOE2").html(DOEModal);
+        $("#total_guests2").html(total_guestsModal);
+        $("#flavour2").html(flavorModal);
+        $("#filling2").html(fillingModal);
+                console.log("modalTest Passed");
         
     }
     
@@ -48,23 +62,4 @@ function validation() {
 
 function yes() {
     alert("Your request has been submitted. Thank you for choosing CakeArt by James!");
-}
-
-function summary() {
-
-    var full_name = document.getElementById('full_name').value;
-    var email = document.getElementById('email').value;
-    //let DOE = document.getElementById('DOE').value;
-    var total_guests = document.getElementById('total_guests').value;
-    //let flavour  = document.getElementById('flavour').value;
-   // let filling = document.getElementById('filling').value;
-
-    document.getElementById('full_name2').value = "full_name";
-    document.getElementById('email2').innerHTML = email;
-    //document.getElementById('DOE2').innerHTML = DOE;
-    document.getElementById('total_guests2').innerHTML = total_guests;
-
-    console.log("Summary Passed");
-
-    
 }
