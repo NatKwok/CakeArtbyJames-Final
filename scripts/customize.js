@@ -7,7 +7,7 @@ function validation() {
     let DOE = $("#DOE");
     let total_guests = $("#total_guests");
 
-    if (full_name == null || full_name.value == "" || full_name.value == "Type in Full Name (Firstname, Lastname)") {
+    if (full_name == null || full_name.val("") || full_name.val("Type in Full Name (Firstname, Lastname)") ) {
         console.log("passed")
         alert("Please provide your full name");
         full_name.focus();
