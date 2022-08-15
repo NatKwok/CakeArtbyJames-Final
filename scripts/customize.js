@@ -9,7 +9,7 @@ function validation() {
     let flavorModal = $("#flavor").val();
 
     if (full_nameModal == null || full_nameModal == "" || full_nameModal == "Type in Full Name (Firstname, Lastname)") {
-        console.log("passed");
+        console.log("passed full_name");
         alert("Please provide your full name");
         $("#full_name").focus();
         return false;
@@ -17,7 +17,7 @@ function validation() {
     }
 
     else if (emailModal == null || emailModal == "" || emailModal == "Enter your email address") {
-        console.log("passed")
+        console.log("passed email")
         alert("Please provide your email");
         $("#email").focus();
         return false;
@@ -25,7 +25,7 @@ function validation() {
     }
 
     else if (DOEModal == null || DOEModal == "") {
-        console.log("passed")
+        console.log("passed DOE")
         alert("Please set a date");
         $("#DOE").focus();
         return false;
@@ -33,7 +33,7 @@ function validation() {
     }
 
     else if (total_guestsModal == null || total_guestsModal == "" || total_guestsModal == "Enter number of guests so we can prepare the cake size") {
-        console.log("passed")
+        console.log("passed guests")
         alert("Please provide the total number of guests");
         $("#total_guests").focus();
         return false;
