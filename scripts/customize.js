@@ -41,7 +41,7 @@ function validation() {
     else {
         console.log("All inputs filled")
         alert("Your request has been submitted. Thank you for choosing CakeArt by James!");
-        document.getElementById('exampleModal').modal();
+        $('#testModal').modal('show');
         
     }
 
