@@ -62,4 +62,5 @@ function validation() {
 
 function yes() {
     alert("Your request has been submitted. Thank you for choosing CakeArt by James!");
+    $('#testModal').modal('hide');
 }
