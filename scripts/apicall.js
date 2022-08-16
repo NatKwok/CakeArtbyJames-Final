@@ -17,6 +17,7 @@ $(document).ready(() => {
                 url: url,
                 success: (resp) => {
                     console.log('#contact-api-call');
+                    console.log(resp);
                     resp.results.forEach(item => rows = rows + row(item.id,item.title,item.image));
                     table("#specialModalBody",rows);
                     myModal.show();                  
