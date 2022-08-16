@@ -6,23 +6,26 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-
-  <meta content= "ZHENGLIANG LI" name="Author">
-
+    <meta content= "ZHENGLIANG LI" name="Author">
 
     <title>Cake Art by James</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/Hero-Carousel-images.css" />
-
+    
+    <!-- icon images links: -->
     <link href="../assets/img/logo/favicon-32x32.png" rel="icon" />
     <link href="../assets/img/logo/apple-touch-icon.png" rel="apple-touch-icon" />
-
+    
+    <!-- Bootstrap css links: -->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/Hero-Carousel-images.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
     />
     <link rel="stylesheet" href="../assets/css/Navbar-With-Button-icons.css" />
+
+    <!-- style css link: -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/cart.css" />
   </head>
 
   <body class="cup-back">
@@ -73,7 +76,10 @@
             </li>
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item"></li>
+            <!-- Shopping cart: -->
+            <li class="nav-item cart">
+              <a class="nav-link" href="cart.html"> <ion-icon name="cart"></ion-icon> Cart <span class="cart-num">0</span></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link link-visited" href="cupcakes.html">EN</a>
             </li>
@@ -101,7 +107,6 @@
       <!-- product -->
       <div class="col-md-4 product-grid">
         <div class="cake-image">
-          <a href="#">
             <img src="../assets/img/cupcakes/product-1.jpg" alt="peanut butter Cupcake" class="w-100" />
             <div class="overlay">
               <div class="detail">Love it? Order now!</div>
@@ -110,15 +115,14 @@
         </div>
         <h4 class="text-center">Peanut Butter</h4>
         <h5 class="text-center">Price: $3.5</h5>
-        <a href="#" class="btn buy">Order</a>
+        <button class="btn buy add-cart">Order</button>
       </div>
       <!-- product -->
 
       <!-- product -->
       <div class="col-md-4 product-grid">
         <div class="cake-image">
-          <a href="#">
-            <img src="../assets/img/cupcakes/product-2.jpg" alt="cake-image" class="w-100" />
+            <img src="../assets/img/cupcakes/product-2.jpg" alt="Lemon Chocolate" class="w-100" />
             <div class="overlay">
               <div class="detail">Love it? Order now!</div>
             </div>
@@ -126,14 +130,14 @@
         </div>
         <h4 class="text-center">Lemon Chocolate</h4>
         <h5 class="text-center">Price: $3.5</h5>
-        <a href="#" class="btn buy">Order</a>
+        <button class="btn buy add-cart">Order</button>
+
       </div>
       <!-- product -->
 
       <!-- product -->
       <div class="col-md-4 product-grid">
         <div class="cake-image">
-          <a href="#">
             <img src="../assets/img/cupcakes/product-3.jpg" alt="Dulce de leche" class="w-100" />
             <div class="overlay">
               <div class="detail">Love it? Order now!</div>
@@ -142,14 +146,14 @@
         </div>
         <h4 class="text-center">Dulce de Leche</h4>
         <h5 class="text-center">Price: $3.5</h5>
-        <a href="#" class="btn buy">Order</a>
+        <button class="btn buy add-cart">Order</button>
+
       </div>
       <!-- product -->
 
       <!-- product -->
       <div class="col-md-4 product-grid">
         <div class="cake-image">
-          <a href="#">
             <img src="../assets/img/cupcakes/product-4.jpg" alt="Raspberry" class="w-100" />
             <div class="overlay">
               <div class="detail">Love it? Order now!</div>
@@ -158,14 +162,14 @@
         </div>
         <h4 class="text-center">Raspberry</h4>
         <h5 class="text-center">Price: $3.5</h5>
-        <a href="#" class="btn buy">Order</a>
+        <button class="btn buy add-cart">Order</button>
+
       </div>
       <!-- product -->
 
         <!-- product -->
       <div class="col-md-4 product-grid">
         <div class="cake-image">
-          <a href="#">
             <img src="../assets/img/cupcakes/product-5.jpg" alt="Green Grape" class="w-100" />
             <div class="overlay">
               <div class="detail">Love it? Order now!</div>
@@ -174,14 +178,14 @@
         </div>
         <h4 class="text-center">Green Grape</h4>
         <h5 class="text-center">Price: $3.5</h5>
-        <a href="#" class="btn buy">Order</a>
+        <button class="btn buy add-cart">Order</button>
+
       </div>
       <!-- product -->
 
      <!-- product -->
      <div class="col-md-4 product-grid">
       <div class="cake-image">
-        <a href="#">
           <img src="../assets/img/cupcakes/product-6.jpg" alt="Cheese" class="w-100" />
           <div class="overlay">
             <div class="detail">Love it? Order now!</div>
@@ -190,7 +194,8 @@
       </div>
       <h4 class="text-center">Cheese</h4>
       <h5 class="text-center">Price: $3.5</h5>
-      <a href="#" class="btn buy">Order</a>
+      <button class="btn buy add-cart">Order</button>
+
     </div>
     <!-- product -->
 
@@ -198,7 +203,6 @@
       <!-- product -->
       <div class="col-md-4 product-grid">
         <div class="cake-image">
-          <a href="#">
             <img src="../assets/img/cupcakes/product-7.jpg" alt="red velvet" class="w-100" />
             <div class="overlay">
               <div class="detail">Love it? Order now!</div>
@@ -207,14 +211,14 @@
         </div>
         <h4 class="text-center">Red Velvet</h4>
         <h5 class="text-center">Price: $3.5</h5>
-        <a href="#" class="btn buy">Order</a>
+        <button class="btn buy add-cart">Order</button>
+
       </div>
       <!-- product -->
 
         <!-- product -->
      <div class="col-md-4 product-grid">
       <div class="cake-image">
-        <a href="#">
           <img src="../assets/img/cupcakes/product-8.jpg" alt="White Chocolate red velvet" class="w-100" />
           <div class="overlay">
             <div class="detail">Love it? Order now!</div>
@@ -223,14 +227,14 @@
       </div>
       <h4 class="text-center">White Chocolate Red velvet</h4>
       <h5 class="text-center">Price: $3.5</h5>
-      <a href="#" class="btn buy">Order</a>
+      <button class="btn buy add-cart">Order</button>
+
     </div>
     <!-- product -->
 
       <!-- product -->
       <div class="col-md-4 product-grid">
         <div class="cake-image">
-          <a href="#">
             <img src="../assets/img/cupcakes/product-9.jpg" alt="Strawberry" class="w-100" />
             <div class="overlay">
               <div class="detail">Love it? Order now!</div>
@@ -239,7 +243,8 @@
         </div>
         <h4 class="text-center">Strawberry</h4>
         <h5 class="text-center">Price: $3.5</h5>
-        <a href="#" class="btn buy">Order</a>
+        <button class="btn buy add-cart">Order</button>
+
       </div>
       <!-- product -->
 
@@ -257,8 +262,7 @@
             <ul class="list-inline">
               <li class="list-inline-item me-4"></li>
               <li class="list-inline-item me-4">
-                <a class="link-secondary" href="#"
-                  >Designed and Developed by K.K.L.P</a
+                <a class="link-secondary">Designed and Developed by K.K.L.P</a
                 >
               </li>
               <li class="list-inline-item"></li>
@@ -308,8 +312,17 @@
             <p class="mb-0">Copyright © 2022 Cake Art by James</p>
           </div>
         </footer>
+
+        <!-- bootstrap JS -->
         <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
         <script src="../assets/js/Lightbox-Gallery.js"></script>
+
+        <!-- ion icons JS -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- shopping cart JS -->
+        <script src="../assets/js/cart_cupcakes.js"></script>
       </body>
     </html>
