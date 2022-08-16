@@ -6,6 +6,15 @@
   color: #434444;
 }
 
+#cart-icon {
+  vertical-align: bottom;
+  font-size: 32px;
+  padding-right: 5px;
+  background-color: #ffde59;
+  color: #434444;
+  cursor: pointer;
+}
+
 .products-container {
   max-width: 650px;
   justify-content: space-around;
