@@ -109,3 +109,16 @@
     hsl(40deg 100% 70%) 100%
   );
 }
+
+.error-404-header {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.error-404-p {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
