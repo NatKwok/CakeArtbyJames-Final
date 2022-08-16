@@ -1,4 +1,4 @@
-// 'add-cart' from all the buttons
+// 'add-cart' from all the order buttons
 let carts = document.querySelectorAll('.add-cart');
 
 // All the products list on the web, and store them to an array-products:
@@ -77,7 +77,7 @@ let products = [
   },
 ];
 
-// whenver I click the order button, I want some action:
+// whenever I click the order button, I want some action:
 // so I need to loop all of them:
 
 for (let i = 0; i < carts.length; i++) {
@@ -205,9 +205,7 @@ function displayCart() {
       productContainer.innerHTML += `
       <div class = "product">      
         <ion-icon name="close-circle"> </ion-icon>
-        
         <img src="../assets/img/cupcakes/product-${item.id}.jpg">
-        
         <span>${item.name}</span>
       </div>
 
