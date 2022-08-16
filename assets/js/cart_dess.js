@@ -53,8 +53,6 @@ let products = [
   },
 ];
 
-// whenver I click the order button, I want some action:
-// so I need to loop all of them:
 var productsInCart = [];
 
 let cartIcon = document.getElementById('cart-icon');
