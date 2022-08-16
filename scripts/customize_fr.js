@@ -8,17 +8,17 @@ function validation() {
     let fillingModal = $("#filling").val();
     let flavorModal = $("#flavor").val();
 
-    if (full_nameModal == null || full_nameModal == "" || full_nameModal == "Type in Full Name (Firstname, Lastname)" ) {
+    if (full_nameModal == null || full_nameModal == "" || full_nameModal == "Le Nom (Prenom, Nom)" ) {
         console.log("passed full_name");
-        alert("Please provide your full name");
+        alert("Entrer ton nom svp");
         $("#full_name").focus();
         return false;
         
     }
 
-    else if (emailModal == null || emailModal == "" || emailModal == "Enter your email address") {
+    else if (emailModal == null || emailModal == "" || emailModal == "Courriel") {
         console.log("passed email")
-        alert("Please provide your email");
+        alert("Entrer ton courriel svp");
         $("#email").focus();
         return false;
         
@@ -26,15 +26,15 @@ function validation() {
 
     else if (DOEModal == null || DOEModal == "") {
         console.log("passed DOE")
-        alert("Please set a date");
+        alert("Quel est le date de ton eventement?");
         $("#DOE").focus();
         return false;
         
     }
 
-    else if (total_guestsModal == null || total_guestsModal == "" || total_guestsModal == "Enter number of guests so we can prepare the cake size") {
+    else if (total_guestsModal == null || total_guestsModal == "" || total_guestsModal == "Invitée totalement") {
         console.log("passed guests")
-        alert("Please provide the total number of guests");
+        alert("Combien personne de ton eventement?");
         $("#total_guests").focus();
         return false;
         
@@ -56,6 +56,6 @@ function validation() {
 }
 
 function yes() {
-    alert("Your request has been submitted. Thank you for choosing CakeArt by James!");
+    alert("Ton commande est complete! Merci pour choisir CakeArt de James. Bon Appetite!");
     $('#testModal').modal('hide');
 }
